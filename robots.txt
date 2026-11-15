@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hihitocast-cloud.github.io/hitocast/sitemap.xml
