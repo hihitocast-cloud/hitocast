@@ -24,7 +24,6 @@
 
     var mode = sortSelect.value;
     var sorted = visible.slice().sort(function(a, b){
-      if (mode === 'views') return (+b.getAttribute('data-views')) - (+a.getAttribute('data-views'));
       if (mode === 'longest') return (+b.getAttribute('data-mins')) - (+a.getAttribute('data-mins'));
       if (mode === 'title') return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
       return b.getAttribute('data-date').localeCompare(a.getAttribute('data-date'));
@@ -52,12 +51,6 @@
     searchInput.value = ''; sortSelect.value = 'newest'; setFilter('all');
   });
 
-  Array.prototype.forEach.call(document.querySelectorAll('[data-goto-filter]'), function(btn){
-    btn.addEventListener('click', function(){
-      setFilter(btn.getAttribute('data-goto-filter'));
-      document.getElementById('stories').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
 
   /* Theme toggle — session only, no storage */
   var root = document.documentElement;
