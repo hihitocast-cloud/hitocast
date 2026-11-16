@@ -279,20 +279,22 @@
   .article-nav b{ font-family:"Newsreader",serif; font-size:1.08rem; line-height:1.3; font-weight:600; display:block; }
   .article-nav .next{ text-align:right; }
 
-  /* ===== Salt Road timeline (HitoCast design: dashed trail + crystal diamonds) ===== */
+  /* ===== Salt Road timeline (HitoCast design: dashed trail + round numbered icons) ===== */
   .salt-tl{ position:relative; margin:10px 0 34px; padding:4px 0 2px; }
-  .salt-tl::before{ content:""; position:absolute; left:10px; top:8px; bottom:8px; border-left:2px dashed var(--line-strong); }
-  .salt-tl-fill{ position:absolute; left:10px; top:8px; height:0; border-left:2px solid var(--rust); }
-  .stl-item{ position:relative; padding:0 0 18px 36px; opacity:0; transform:translateX(26px); transition:opacity .7s ease, transform .7s ease; }
+  .salt-tl::before{ content:""; position:absolute; left:15px; top:10px; bottom:10px; border-left:2px dashed var(--line-strong); }
+  .salt-tl-fill{ position:absolute; left:15px; top:10px; height:0; border-left:2px solid var(--rust); }
+  .stl-item{ position:relative; padding:0 0 18px 52px; opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
   .stl-item.in{ opacity:1; transform:none; }
-  .stl-dot{ position:absolute; left:3px; top:18px; width:13px; height:13px; background:var(--surface); border:3px solid var(--rust); border-radius:3px; transform:rotate(45deg); }
-  .stl-card{ display:flex; gap:15px; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:14px 16px; box-shadow:var(--shadow); }
+  .stl-dot{ position:absolute; left:2px; top:14px; width:28px; height:28px; border-radius:50%; background:var(--surface); border:2px solid var(--line-strong); color:var(--ink-3); font-size:.8rem; font-weight:800; display:flex; align-items:center; justify-content:center; transition:background .4s ease, border-color .4s ease, color .4s ease, box-shadow .4s ease; z-index:1; }
+  .stl-item.lit .stl-dot{ background:var(--rust); border-color:var(--rust); color:#fff; box-shadow:0 0 0 5px color-mix(in srgb, var(--rust) 18%, transparent); }
+  .stl-card{ display:flex; gap:15px; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:14px 16px; box-shadow:var(--shadow); transition:border-color .4s ease; }
+  .stl-item.lit .stl-card{ border-color:var(--line-strong); }
   .stl-card img{ width:96px; height:96px; object-fit:cover; border-radius:10px; flex:none; }
   .stl-year{ font-family:"Newsreader", Georgia, serif; font-weight:700; color:var(--rust); font-size:1.32rem; line-height:1.1; }
   .stl-card h3{ margin:2px 0 4px; font-size:1.05rem; }
   .stl-card p{ margin:0; font-size:.95rem; line-height:1.55; color:var(--ink-2); }
   @media (max-width:560px){ .stl-card{ flex-direction:column; } .stl-card img{ width:100%; height:150px; } }
-  @media (prefers-reduced-motion: reduce){ .stl-item{ opacity:1; transform:none; transition:none; } }
+  @media (prefers-reduced-motion: reduce){ .stl-item{ opacity:1; transform:none; transition:none; } .stl-dot{ transition:none; } }
 
   /* ===== Salt round 6: watch-top, FAQ cards, lessons, words, sources, more stories, share ===== */
   .watch-top{ max-width:46rem; margin:30px auto 0; padding:0 20px; }
