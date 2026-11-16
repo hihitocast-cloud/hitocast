@@ -320,3 +320,19 @@
   .share-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
   .share-btn{ appearance:none; cursor:pointer; font:inherit; font-size:.95rem; text-decoration:none; color:var(--ink); background:var(--surface); border:1px solid var(--line-strong); border-radius:999px; padding:9px 18px; }
   .share-btn:hover{ border-color:var(--rust); color:var(--rust); }
+
+  /* ===== Round 7: Stories dropdown + clean video facade ===== */
+  .has-drop{ position:relative; display:inline-flex; align-items:center; gap:1px; }
+  .drop-btn{ cursor:pointer; font-size:.72rem; color:var(--ink-2); padding:4px 3px; user-select:none; }
+  .drop-check{ position:absolute; opacity:0; pointer-events:none; }
+  .drop{ position:absolute; top:calc(100% + 12px); left:50%; transform:translate(-50%,6px); min-width:248px; background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow-lg); padding:8px; opacity:0; visibility:hidden; transition:opacity .18s ease, transform .18s ease, visibility .18s; z-index:80; }
+  .has-drop:hover .drop, .has-drop:focus-within .drop, .drop-check:checked ~ .drop{ opacity:1; visibility:visible; transform:translate(-50%,0); }
+  .drop a{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding:9px 12px; border-radius:9px; font-size:.95rem; white-space:nowrap; }
+  .drop a:hover{ background:var(--surface-2); }
+  .drop a span{ color:var(--ink-3); font-size:.82rem; font-weight:700; }
+  .drop-sep{ display:block; border-top:1px solid var(--line); margin:6px 4px; }
+  .yt-facade{ position:relative; width:100%; aspect-ratio:16/9; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); background:#000; cursor:pointer; }
+  .yt-facade img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .yt-play{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:72px; height:51px; background:#f03; border-radius:13px; transition:transform .15s ease, background .15s ease; }
+  .yt-play::after{ content:""; position:absolute; left:50%; top:50%; transform:translate(-42%,-50%); border-style:solid; border-width:11px 0 11px 19px; border-color:transparent transparent transparent #fff; }
+  .yt-facade:hover .yt-play, .yt-facade:focus .yt-play{ transform:translate(-50%,-50%) scale(1.07); background:#c00; }

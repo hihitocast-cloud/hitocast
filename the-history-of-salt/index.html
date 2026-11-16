@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../style.css?v=6" />
+<link rel="stylesheet" href="../style.css?v=7" />
 </head>
 <body>
 <header class="site">
@@ -33,7 +33,7 @@
       </span>
     </a>
     <nav class="main" aria-label="Main navigation">
-      <a href="../#stories">Stories</a>
+      <span class="has-drop"><a href="../#stories">Stories</a><label class="drop-btn" for="navDrop" aria-label="Show story categories">▾</label><input type="checkbox" id="navDrop" class="drop-check" /><span class="drop"><a href="../food-history/">Food History<span>6</span></a><a href="../everyday-things/">Everyday Things<span>4</span></a><a href="../inventions-discoveries/">Inventions &amp; Discoveries<span>3</span></a><a href="../people/">People<span>1</span></a><a href="../civilizations-empires/">Civilizations &amp; Empires<span>1</span></a><span class="drop-sep"></span><a href="../#stories">All Stories<span>→</span></a></span></span>
       <a href="../about/">About</a>
     </nav>
     <div class="header-actions">
@@ -54,7 +54,7 @@
       
     </figure>
   </div>
-  <section class="watch-top"><h2>Watch the Full Story</h2><p>Want to experience this story in a slower, more cinematic way? Watch the full HitoCast video here: </p><div class="video-embed"><iframe src="https://www.youtube.com/embed/OjWIjwLNzUM?feature=oembed" title="Watch on YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></section>
+  <section class="watch-top"><h2>Watch the Full Story</h2><p>Want to experience this story in a slower, more cinematic way? Watch the full HitoCast video here: </p><div class="yt-facade" data-yt="OjWIjwLNzUM" role="button" tabindex="0" aria-label="Play the video: The History of Salt"><img src="https://i.ytimg.com/vi/OjWIjwLNzUM/maxresdefault.jpg" alt="The History of Salt — video cover" loading="lazy" decoding="async" /><span class="yt-play" aria-hidden="true"></span></div></section>
   <article class="article-body">
 
 <p>A tiny mineral fed armies, taxed peasants, and humbled an empire.</p>
@@ -567,13 +567,6 @@
           </div>
         </article></div></section>
 <section class="share-story"><h2>Share This Story</h2><p>If this story warmed your day, share it with a friend who loves good stories and simple English.</p><div class="share-row"><a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhitocast.com%2Fthe-history-of-salt%2F" target="_blank" rel="noopener">Share on Facebook</a><a class="share-btn" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhitocast.com%2Fthe-history-of-salt%2F&text=The%20History%20of%20Salt%3A%20The%20White%20Crystal%20That%20Built%20Empires" target="_blank" rel="noopener">Share on X</a><button class="share-btn" type="button" onclick="navigator.clipboard.writeText('https://hitocast.com/the-history-of-salt/');this.textContent='Link copied ✓'">Copy Link</button></div></section>
-  
-  
-  
-  <nav class="article-nav" aria-label="More stories">
-    <a href="../history-of-bread/"><small>← Newer story</small><b>The History of Bread: How One Loaf Built Civilization</b></a>
-    <a class="next" href="../history-of-wine/"><small>Older story →</small><b>The History of Wine: How a Forgotten Jar Became the World’s Most Celebrated Drink</b></a>
-  </nav>
 </main>
 <footer class="site">
   <div class="wrap">
@@ -583,7 +576,7 @@
         <span class="name">HITOCAST</span>
       </a>
       <nav aria-label="Footer links">
-        <a href="../#stories">Stories</a>
+        <span class="has-drop"><a href="../#stories">Stories</a><label class="drop-btn" for="navDrop" aria-label="Show story categories">▾</label><input type="checkbox" id="navDrop" class="drop-check" /><span class="drop"><a href="../food-history/">Food History<span>6</span></a><a href="../everyday-things/">Everyday Things<span>4</span></a><a href="../inventions-discoveries/">Inventions &amp; Discoveries<span>3</span></a><a href="../people/">People<span>1</span></a><a href="../civilizations-empires/">Civilizations &amp; Empires<span>1</span></a><span class="drop-sep"></span><a href="../#stories">All Stories<span>→</span></a></span></span>
         <a href="../about/">About</a>
         <a href="../policy/">Policy</a>
         <a href="https://www.youtube.com/channel/UCJ75C5OMAGzGY9Z21fND_1Q" target="_blank" rel="noopener">YouTube ↗</a>
@@ -613,6 +606,21 @@
   window.addEventListener('scroll',upd,{passive:true});
   window.addEventListener('resize',upd);
   upd();
+})();
+</script>
+<script>
+(function(){
+  var f=document.querySelector('.yt-facade'); if(!f) return;
+  function play(){
+    var ifr=document.createElement('iframe');
+    ifr.src='https://www.youtube-nocookie.com/embed/'+f.getAttribute('data-yt')+'?autoplay=1&rel=0';
+    ifr.title='Watch on YouTube'; ifr.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    ifr.allowFullscreen=true;
+    var wrap=document.createElement('div'); wrap.className='video-embed'; wrap.appendChild(ifr);
+    f.replaceWith(wrap);
+  }
+  f.addEventListener('click',play);
+  f.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); play(); } });
 })();
 </script>
 </body>
