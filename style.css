@@ -235,8 +235,8 @@
   .crumbs{ padding:22px 0 0; font-size:.9rem; font-weight:700; }
   .crumbs a{ color:var(--rust); text-decoration:none; }
   .article-hero{ padding:26px 0 8px; }
-  .article-hero .cat-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
-  .article-hero .cat-chip-static{
+  .cat-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+  .cat-chip-static{
     background:var(--surface-2); border:1px solid var(--line-strong); color:var(--ink-2);
     font-size:.72rem; font-weight:800; letter-spacing:.11em; text-transform:uppercase;
     padding:6px 11px; border-radius:999px;
