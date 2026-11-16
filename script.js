@@ -45,6 +45,8 @@
   pills.forEach(function(p){
     p.addEventListener('click', function(){ setFilter(p.getAttribute('data-filter')); });
   });
+  var startTopic = new URLSearchParams(window.location.search).get('topic');
+  if (startTopic && pills.some(function(p){ return p.getAttribute('data-filter') === startTopic; })) setFilter(startTopic);
   searchInput.addEventListener('input', apply);
   sortSelect.addEventListener('change', apply);
   document.getElementById('resetFilters').addEventListener('click', function(){
