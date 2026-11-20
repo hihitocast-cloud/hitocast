@@ -291,3 +291,9 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .more-grid .card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .more-grid .card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}
 .more-grid .card .readlink{color:var(--blue);font-weight:600;font-size:14.5px}
+
+/* ===== Article width taken from FTB (Tran, 2026-11-20): 860 column, 680 figures ===== */
+.article-col{max-width:860px;padding:36px 20px 8px}
+.article-col figure{max-width:680px;margin:22px auto}
+.watch-top .yt-facade{max-width:680px;margin:0 auto}
+@media(max-width:700px){.article-col{padding:28px 2px 8px}}
