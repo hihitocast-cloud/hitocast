@@ -352,7 +352,7 @@
     nav.main a{ padding:9px 6px; font-size:.88rem; }
     header.site nav.main > a[href$="about/"]{ display:none; }
     .header-actions #themeToggle{ display:none; }
-    header.site nav.main .has-drop > a{ font-weight:700; font-size:1rem; }
+    header.site nav.main .has-drop > a{ font-weight:700; font-size:1.18rem; }
     .drop{ min-width:min(248px, calc(100vw - 16px)); }
     .drop a{ white-space:normal; }
     footer.site .drop{ left:0; right:auto; transform:translate(0,6px); }
