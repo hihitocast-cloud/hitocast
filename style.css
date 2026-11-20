@@ -334,3 +334,4 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
   .hgtl-line,.hgtl-dot{display:none}
   .hgtl-yr{margin-bottom:2px}
 }
+.hgtl-ms:last-child .hgtl-line{display:none}
