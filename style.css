@@ -384,3 +384,7 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .widget.box-dark h3::after{content:"";display:block;width:64px;height:3px;border-radius:2px;background:linear-gradient(90deg,#C49A4A,#A87F33);margin-top:10px}
 .widget.box-dark .mark{box-shadow:0 4px 14px rgba(120,90,30,.25)}
 .widget.box-dark a.more-link{color:#8A6414;font-weight:600}
+
+/* Sidebar About photo — full-bleed natural crop, no frame (Tran, 2026-11-20) */
+.about-photo{margin:-26px -28px 18px;border-radius:23px 23px 0 0;overflow:hidden}
+.about-photo img{width:100%;height:auto;display:block}
