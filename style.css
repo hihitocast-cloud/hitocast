@@ -335,3 +335,7 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
   .hgtl-yr{margin-bottom:2px}
 }
 .hgtl-ms:last-child .hgtl-line{display:none}
+
+/* ===== Quotes and word cards join the light-blue family (Tran, 2026-11-20) ===== */
+.article-body blockquote{background:linear-gradient(165deg,#FCFDFE 0%,#E8EFF4 130%);border:1px solid #C7D5DF}
+.word-card{background:#EFF4F8;border:1px solid #C7D5DF}
