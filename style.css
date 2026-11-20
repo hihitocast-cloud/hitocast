@@ -386,5 +386,5 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .widget.box-dark a.more-link{color:#8A6414;font-weight:600}
 
 /* Sidebar About photo — full-bleed natural crop, no frame (Tran, 2026-11-20) */
-.about-photo{margin:-18px -20px 4px;max-width:none}
+.about-photo{width:min(334px,calc(100% + 40px));margin:-18px auto 4px}
 .about-photo img{width:100%;height:auto;display:block}
