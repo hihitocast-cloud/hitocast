@@ -192,3 +192,21 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .share-btn:hover{border-color:var(--blue);color:var(--blue);text-decoration:none}
 .logo-img{height:44px;width:auto;display:block}
 @media(max-width:700px){.logo-img{height:38px}}
+
+/* ===== Nav: categories + YouTube pill (Tran, 2026-11-20) ===== */
+.site-header nav{gap:22px}
+.yt-link{position:relative;display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:8px 16px;line-height:1.2 !important;margin-left:8px;overflow:hidden;animation:ytglow 2.8s ease-out infinite}
+.yt-link:hover{opacity:1;border-color:#fff;text-decoration:none}
+.yt-link::before{content:"";position:absolute;top:0;left:-80%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg);animation:ytshine 3.6s ease-in-out infinite;pointer-events:none}
+.yt-play-ic{position:relative;flex:none;width:25px;height:18px;background:#FF0000;border-radius:4px;animation:ytpulse 2.8s ease-in-out infinite}
+.yt-play-ic::after{content:"";position:absolute;top:50%;left:55%;transform:translate(-50%,-50%);border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #fff}
+@keyframes ytshine{0%{left:-80%}18%{left:130%}100%{left:130%}}
+@keyframes ytpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.13)}}
+@keyframes ytglow{0%{box-shadow:0 0 0 0 rgba(255,60,60,.45)}70%{box-shadow:0 0 0 10px rgba(255,60,60,0)}100%{box-shadow:0 0 0 0 rgba(255,60,60,0)}}
+@media (prefers-reduced-motion: reduce){.yt-link,.yt-link::before,.yt-play-ic{animation:none}}
+@media(max-width:1100px){
+  .site-header .in{flex-wrap:wrap;height:auto;padding:10px 16px;justify-content:center}
+  .site-header nav{gap:16px;flex-wrap:wrap;justify-content:center}
+  .site-header nav a{line-height:1.5}
+  .yt-link{margin-left:0}
+}
