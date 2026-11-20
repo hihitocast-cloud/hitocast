@@ -362,7 +362,7 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .map-title{font-size:1.15rem;font-weight:700;color:#22252a}
 .map-body p{margin:4px 0 0;color:#3C434B}
 @media(max-width:700px){.map-era{flex-basis:94px;font-size:.92rem}}
-.hero-start{margin:16px 0 0;color:#E9DCC0;font-size:.98rem}
+.hero-start{margin:28px 0 0;color:#E9DCC0;font-size:.98rem}
 .hero-start a{color:#EFC978;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .pdf-row{margin:16px 0 0}
 .pdf-btn{font:inherit;font-size:.92rem;font-weight:600;color:#8A6414;background:#fff;border:1.5px solid #C9A44C;border-radius:999px;padding:7px 16px;cursor:pointer}
