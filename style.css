@@ -379,7 +379,7 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 @media print{.watch-part{display:none!important}}
 
 /* Sidebar About box — pale cream gold, Tran's pick A (2026-11-20) */
-.widget.box-dark{background:radial-gradient(220px 140px at 92% 0%,rgba(232,201,122,.55),rgba(232,201,122,0) 70%),radial-gradient(200px 130px at 0% 100%,rgba(232,201,122,.4),rgba(232,201,122,0) 70%),linear-gradient(165deg,#FDF9EF 0%,#F6EBCF 100%);border:1px solid #E3D3AC;color:#4A3A28;box-shadow:0 10px 26px rgba(120,90,30,.14)}
+.widget.box-dark{background:radial-gradient(240px 150px at 92% 0%,rgba(232,201,122,.32),rgba(232,201,122,0) 72%),radial-gradient(200px 130px at 0% 100%,rgba(232,201,122,.3),rgba(232,201,122,0) 70%),linear-gradient(180deg,rgba(253,249,239,0) 0%,#FCF5E1 26%,#F6EBCF 100%);border:none;color:#4A3A28;box-shadow:0 10px 26px rgba(120,90,30,.10)}
 .widget.box-dark h3{color:#3A2A16;font-family:Georgia,'Times New Roman',serif}
 .widget.box-dark h3::after{content:"";display:block;width:64px;height:3px;border-radius:2px;background:linear-gradient(90deg,#C49A4A,#A87F33);margin-top:10px}
 .widget.box-dark .mark{box-shadow:0 4px 14px rgba(120,90,30,.25)}
