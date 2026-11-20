@@ -234,8 +234,8 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 }
 
 /* ===== Antique brass accent, one notch deeper than FTB gold (Tran, 2026-11-20) ===== */
-.promo{background:linear-gradient(180deg,#C49A4A,#A87F33);color:#2A1B0E}
-.promo a{color:#2A1B0E}
+.promo{background:linear-gradient(180deg,#B8903F,#96742E);color:#FFF6DC}
+.promo a{color:#FFF6DC}
 .btn{background:linear-gradient(180deg,#C49A4A,#A87F33);color:#2A1B0E;font-weight:600}
 .btn:hover{background:linear-gradient(180deg,#B8903F,#96742E);color:#2A1B0E}
 @keyframes ytglow{0%{box-shadow:0 0 0 0 rgba(196,154,74,.5)}70%{box-shadow:0 0 0 10px rgba(196,154,74,0)}100%{box-shadow:0 0 0 0 rgba(196,154,74,0)}}
