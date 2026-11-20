@@ -1,8 +1,8 @@
 /* ===== Draft E2: woorkup.com exact tokens (measured 2026-11-20), HitoCast content =====
-   body 18px/1.6 #22252a on #fff | links #2375d6 | header+darkbox #343e47 | promo+buttons #4a89dd */
+   body 18px/1.6 #22252a on #fff | links #A44A22 | header+darkbox #343e47 | promo+buttons #B5502A */
 :root{
   --bg:#FFFFFF; --ink:#22252a; --muted:#4c5357;
-  --slate:#343e47; --blue:#2375d6; --blue-btn:#4a89dd;
+  --slate:#343e47; --blue:#A44A22; --blue-btn:#B5502A;
   --line:#E9EDEF; --panel:#F7F9FA;
 }
 *{box-sizing:border-box}
@@ -12,7 +12,7 @@ a:hover{text-decoration:underline}
 h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.2}
 .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
 
-/* Promo bar: #4a89dd, 15px, 44px tall */
+/* Promo bar: #B5502A, 15px, 44px tall */
 .promo{background:var(--blue-btn);color:#fff;text-align:center;font-size:15px;height:44px;line-height:44px;padding:0 16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .promo a{color:#fff;text-decoration:underline;font-weight:600}
 
@@ -79,7 +79,7 @@ h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.2}
 .widget.about h3{font-size:20px;margin:0 0 8px}
 .widget.about p{font-size:16px;margin:0 0 10px;line-height:1.55}
 .btn{display:inline-block;background:var(--blue-btn);color:#fff;font-weight:400;padding:.5em 1em;border-radius:0;font-size:17px;line-height:1.4}
-.btn:hover{background:#3B74C2;color:#fff;text-decoration:none}
+.btn:hover{background:#9E4523;color:#fff;text-decoration:none}
 .mini-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}
 .mini-row:last-child{border-bottom:none}
 .mini-row img{width:76px;height:44px;object-fit:cover;flex:none}
