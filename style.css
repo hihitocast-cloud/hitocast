@@ -400,3 +400,9 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
   .widget.box-dark .about-text{order:1;flex:1 1 auto}
   .widget.box-dark .about-photo{order:2;flex:0 0 300px;width:300px;margin:0}
 }
+
+/* Nav links: raised block on hover (Tran, 2026-11-20) */
+.site-header nav a:not(.yt-link){padding:9px 11px;margin:0 -11px;line-height:1.25;border-radius:10px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.site-header nav a:not(.yt-link):hover{background:linear-gradient(180deg,#48565F,#39464F);box-shadow:0 6px 14px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.20),inset 0 -1px 0 rgba(0,0,0,.28);transform:translateY(-2px);opacity:1;text-decoration:none}
+.site-header nav a:not(.yt-link):active{transform:translateY(0);box-shadow:0 2px 6px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.15)}
+.site-header nav .m-drop a:not(.yt-link):hover{background:#F7F3EF;box-shadow:none;transform:none}
