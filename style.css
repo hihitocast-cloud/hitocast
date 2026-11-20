@@ -341,4 +341,4 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .word-card{background:#EFF4F8;border:1px solid #C7D5DF}
 
 /* ===== Topic page intro card, light blue (Tran, 2026-11-20) ===== */
-.wrap>.lede{background:linear-gradient(165deg,#FCFDFE 0%,#E8EFF4 130%);border:1px solid #C7D5DF;border-radius:16px;padding:20px 24px;margin:16px 0 28px}
+.wrap>.lede{background:linear-gradient(165deg,#F2F8FC 0%,#DCEAF3 100%);border:1px solid #B9CCDB;border-radius:16px;padding:20px 24px;margin:16px 0 28px;box-shadow:0 2px 10px rgba(70,100,130,.10)}
