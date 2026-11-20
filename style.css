@@ -388,3 +388,15 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 /* Sidebar About photo — full-bleed natural crop, no frame (Tran, 2026-11-20) */
 .about-photo{width:min(334px,calc(100% + 40px));margin:-18px auto 4px}
 .about-photo img{width:100%;height:auto;display:block}
+
+/* About box, wide form: text beside the photo (Tran, 2026-11-20) */
+@media(min-width:721px){
+  .widget.box-dark.wide{display:flex;align-items:center;gap:28px}
+  .widget.box-dark.wide .about-text{order:1;flex:1 1 auto}
+  .widget.box-dark.wide .about-photo{order:2;flex:0 0 300px;width:300px;margin:0}
+}
+@media(min-width:721px) and (max-width:920px){
+  .widget.box-dark{display:flex;align-items:center;gap:28px}
+  .widget.box-dark .about-text{order:1;flex:1 1 auto}
+  .widget.box-dark .about-photo{order:2;flex:0 0 300px;width:300px;margin:0}
+}
