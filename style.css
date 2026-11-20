@@ -373,3 +373,7 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
  .article-col{max-width:none;padding:0}
  .hglance,.word-card{box-shadow:none!important}
 }
+.watch-part{margin:8px 0 0;font-size:.92rem}
+.watch-part a{color:#8A6414;font-weight:600;text-decoration:none;border:1px solid #D9C08A;border-radius:999px;padding:3px 12px;display:inline-block;background:#FDF9EF}
+.watch-part a:hover{background:#F6EBCF}
+@media print{.watch-part{display:none!important}}
