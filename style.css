@@ -239,3 +239,37 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .btn{background:linear-gradient(180deg,#C49A4A,#A87F33);color:#2A1B0E;font-weight:600}
 .btn:hover{background:linear-gradient(180deg,#B8903F,#96742E);color:#2A1B0E}
 @keyframes ytglow{0%{box-shadow:0 0 0 0 rgba(196,154,74,.5)}70%{box-shadow:0 0 0 10px rgba(196,154,74,0)}100%{box-shadow:0 0 0 0 rgba(196,154,74,0)}}
+
+/* ===== Homepage hero, brought over from FTB (Tran, 2026-11-20) ===== */
+.hero-h{text-align:center;padding:44px 24px 38px;background:radial-gradient(700px 300px at 75% -10%,rgba(196,154,74,.32),transparent 60%),linear-gradient(160deg,#241A0F,#171008 75%);color:#F8EFDB;border-radius:20px;margin:26px 0 30px}
+.hkicker{font-family:Arial,Helvetica,sans-serif;letter-spacing:.28em;font-size:.75rem;color:#C49A4A;text-transform:uppercase;margin-bottom:12px}
+.hero-h h1{font-family:Georgia,'Times New Roman',serif;font-size:2.5rem;line-height:1.15;margin:0 0 12px;font-weight:700;color:#F8EFDB}
+.hero-h p{color:#E8D9B8;font-family:Georgia,'Times New Roman',serif;font-size:1.13rem;line-height:1.55;max-width:660px;margin:0 auto}
+.hero-h p.hero-btns{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-top:22px;max-width:none}
+.hbtn{position:relative;overflow:hidden;display:inline-block;background:linear-gradient(180deg,#C49A4A,#A87F33);color:#1D150C;padding:12px 26px;border-radius:999px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:.95rem;transition:transform .25s ease,box-shadow .25s ease}
+.hbtn:hover{text-decoration:none;transform:translateY(-1px);color:#1D150C}
+.hbtn-yt{display:inline-flex;align-items:center;gap:10px}
+.hbtn-yt svg{display:block;filter:drop-shadow(0 2px 5px rgba(0,0,0,.35))}
+.hbtn-yt::before{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg);transition:left .6s ease;pointer-events:none}
+.hbtn-yt:hover::before{left:125%}
+.hbtn-ghost{background:transparent;color:#F8EFDB;border:1.5px solid #8A744C}
+.hbtn-ghost:hover{color:#F8EFDB;border-color:#C49A4A}
+.htimeline{display:flex;justify-content:center;margin:38px auto 4px;max-width:640px;font-family:Arial,Helvetica,sans-serif;position:relative}
+.htimeline::after{content:"";position:absolute;top:6px;left:-40%;width:35%;height:3px;border-radius:2px;background:linear-gradient(90deg,transparent,rgba(255,246,220,.9),transparent);animation:gshine 3.4s ease-in-out infinite;pointer-events:none;z-index:2}
+.hdot{text-align:center;flex:1;position:relative;color:#D8C092;font-size:.8rem;line-height:1.5;animation:gup .8s cubic-bezier(.2,.7,.3,1) both}
+.hdot:nth-child(2){animation-delay:.1s}.hdot:nth-child(3){animation-delay:.2s}.hdot:nth-child(4){animation-delay:.3s}.hdot:nth-child(5){animation-delay:.4s}.hdot:nth-child(6){animation-delay:.5s}
+.hdot::before{content:"";display:block;width:15px;height:15px;border-radius:50%;margin:0 auto 7px;position:relative;z-index:1;background:radial-gradient(circle at 32% 30%,#F0D79A,#C49A4A 55%,#8A6414);animation:hhalo 2.8s ease-out infinite}
+.hdot:nth-child(2)::before{animation-delay:.45s}.hdot:nth-child(3)::before{animation-delay:.9s}.hdot:nth-child(4)::before{animation-delay:1.35s}.hdot:nth-child(5)::before{animation-delay:1.8s}.hdot:nth-child(6)::before{animation-delay:2.25s}
+.hdot:not(:last-child)::after{content:"";position:absolute;top:7px;left:calc(50% + 11px);right:calc(-50% + 11px);height:2px;background:linear-gradient(90deg,rgba(196,154,74,.7),rgba(196,154,74,.25))}
+@keyframes gshine{0%{left:-40%}55%{left:105%}100%{left:105%}}
+@keyframes gup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes hhalo{0%{box-shadow:0 0 0 0 rgba(196,154,74,.45)}70%{box-shadow:0 0 0 9px rgba(196,154,74,0)}100%{box-shadow:0 0 0 0 rgba(196,154,74,0)}}
+@media (prefers-reduced-motion: reduce){.htimeline::after,.hdot,.hdot::before{animation:none}}
+@media(max-width:700px){
+  .hero-h{padding:34px 18px 30px;margin-top:18px}
+  .hero-h h1{font-size:1.85rem}
+  .hero-h p{font-size:1.02rem}
+  .htimeline{font-size:.64rem}
+  .hdot::before{width:11px;height:11px}
+  .hdot:not(:last-child)::after{top:5px;left:calc(50% + 8px);right:calc(-50% + 8px)}
+}
