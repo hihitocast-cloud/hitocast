@@ -280,3 +280,14 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .widget.box-dark h3.about-t{font-size:20px}
 .widget.box-dark p{line-height:1.55}
 .widget.box-dark a.more-link{color:#C49A4A}
+
+/* ===== More Stories cards: true 16:9, clamped text, balanced feet (Tran, 2026-11-20) ===== */
+.more-grid .card{display:flex;flex-direction:column}
+.more-grid .card .imgbox{position:relative}
+.more-grid .card .imgbox img{aspect-ratio:16/9}
+.more-grid .cat-chip{position:absolute;left:10px;bottom:10px;background:rgba(23,16,8,.85);color:#F8EFDB;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px}
+.more-grid .card .body{display:flex;flex-direction:column;flex:1}
+.more-grid .card h3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more-grid .card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more-grid .card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}
+.more-grid .card .readlink{color:var(--blue);font-weight:600;font-size:14.5px}
