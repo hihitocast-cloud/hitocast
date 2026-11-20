@@ -339,3 +339,6 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 /* ===== Quotes and word cards join the light-blue family (Tran, 2026-11-20) ===== */
 .article-body blockquote{background:linear-gradient(165deg,#FCFDFE 0%,#E8EFF4 130%);border:1px solid #C7D5DF}
 .word-card{background:#EFF4F8;border:1px solid #C7D5DF}
+
+/* ===== Topic page intro card, light blue (Tran, 2026-11-20) ===== */
+.wrap>.lede{background:linear-gradient(165deg,#FCFDFE 0%,#E8EFF4 130%);border:1px solid #C7D5DF;border-radius:16px;padding:20px 24px;margin:16px 0 28px}
