@@ -48,14 +48,14 @@ h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.2}
 .meta a{color:var(--ink);text-decoration:underline}
 .row-body{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px}
 .row-body .thumb{display:block}
-.row-body .thumb img{width:300px;height:150px;object-fit:cover;display:block}
-.thumb-text{width:300px;height:150px;display:flex;flex-direction:column;justify-content:flex-end;padding:12px 15px;color:#FFF3E2;background:linear-gradient(150deg,#33121E,#7A2233 55%,#CE7434)}
+.row-body .thumb img{width:300px;aspect-ratio:16/9;object-fit:cover;display:block}
+.thumb-text{width:300px;aspect-ratio:16/9;display:flex;flex-direction:column;justify-content:flex-end;padding:12px 15px;color:#FFF3E2;background:linear-gradient(150deg,#33121E,#7A2233 55%,#CE7434)}
 .thumb-text .ty{font-size:.62rem;font-weight:800;letter-spacing:.14em}
 .thumb-text .tb{font-size:1.3rem;font-weight:700;line-height:1.05;color:#FFF3E2}
 .thumb-text .tf{align-self:flex-start;margin-top:6px;font-size:.6rem;font-weight:700;background:rgba(0,0,0,.32);padding:2px 8px;border-radius:999px}
 .row-body .excerpt{margin:0}
 .readmore{display:block;text-align:right;margin-top:10px}
-@media(max-width:700px){.row-body{grid-template-columns:1fr}.row-body .thumb img,.thumb-text{width:100%;height:auto;aspect-ratio:2/1}}
+@media(max-width:700px){.row-body{grid-template-columns:1fr}.row-body .thumb img,.thumb-text{width:100%;height:auto;aspect-ratio:16/9}}
 
 /* Pagination */
 .pagination{display:flex;gap:8px;justify-content:center;padding:28px 0 6px}
@@ -190,3 +190,5 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .readlink{color:var(--blue);font-weight:600;font-size:15px}
 .share-btn{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:8px 18px;color:var(--ink);font-size:15px;background:#fff;cursor:pointer;margin:0 8px 8px 0;font-family:inherit}
 .share-btn:hover{border-color:var(--blue);color:var(--blue);text-decoration:none}
+.logo-img{height:44px;width:auto;display:block}
+@media(max-width:700px){.logo-img{height:38px}}
