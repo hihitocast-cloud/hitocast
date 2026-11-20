@@ -273,3 +273,10 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
   .hdot::before{width:11px;height:11px}
   .hdot:not(:last-child)::after{top:5px;left:calc(50% + 8px);right:calc(-50% + 8px)}
 }
+
+/* ===== Dark box now carries the About content (Tran, 2026-11-20) ===== */
+.widget.box-dark .mark{width:86px;height:86px;border-radius:50%;overflow:hidden;border:3px solid #C49A4A;box-shadow:0 8px 20px rgba(0,0,0,.35);margin-bottom:14px}
+.widget.box-dark .mark img{width:100%;height:100%;object-fit:cover;display:block}
+.widget.box-dark h3.about-t{font-size:20px}
+.widget.box-dark p{line-height:1.55}
+.widget.box-dark a.more-link{color:#C49A4A}
