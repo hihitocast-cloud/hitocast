@@ -190,8 +190,8 @@ a.cat-chip-static:hover{border-color:var(--blue);color:var(--blue);text-decorati
 .readlink{color:var(--blue);font-weight:600;font-size:15px}
 .share-btn{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:8px 18px;color:var(--ink);font-size:15px;background:#fff;cursor:pointer;margin:0 8px 8px 0;font-family:inherit}
 .share-btn:hover{border-color:var(--blue);color:var(--blue);text-decoration:none}
-.logo-img{height:27px;width:auto;display:block}
-@media(max-width:700px){.logo-img{height:28px}}
+.logo-img{height:32px;width:auto;display:block}
+@media(max-width:700px){.logo-img{height:29px}}
 
 /* ===== Nav: categories + YouTube pill (Tran, 2026-11-20) ===== */
 .site-header nav{gap:18px}
