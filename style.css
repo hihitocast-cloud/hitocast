@@ -112,7 +112,6 @@
   @media (max-width:900px){ .header-in{ gap:12px; } nav.main a{ padding:10px 8px; font-size:.9rem; } }
   @media (max-width:520px){ .btn-yt span.lbl{ display:none; } .btn-yt{ padding:11px 14px; } }
 
-  }
 
   /* ---------- Hero ---------- */
   .hero{ background:var(--brown); color:var(--cream); overflow:hidden; }
@@ -361,3 +360,4 @@
   }
   @media (max-width:400px){
     .brand .mark{ width:30px; height:30px; }
+  }
